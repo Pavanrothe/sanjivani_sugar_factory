@@ -1,0 +1,39 @@
+{
+  "name": "sanjivani-ai",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"tsx watch api.ts\" \"vite --host 0.0.0.0\"",
+    "build": "tsc -p tsconfig.json && vite build",
+    "start": "tsx api.ts",
+    "test": "echo \"No tests configured\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@modelcontextprotocol/client": "^2.3.1",
+    "@modelcontextprotocol/server": "^2.3.1",
+    "dotenv": "^18.0.7",
+    "express": "^5.1.0",
+    "openai": "^7.32.0",
+    "pg": "^8.23.1",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.3",
+    "@types/node": "^26.6.5",
+    "@types/pg": "^8.23.1",
+    "@types/react": "^19.1.8",
+    "@types/react-dom": "^19.1.7",
+    "@vitejs/plugin-react": "^4.7.0",
+    "concurrently": "^9.2.0",
+    "tsx": "^4.23.15",
+    "typescript": "^5.9.2",
+    "vite": "^6.3.5"
+  }
+}
